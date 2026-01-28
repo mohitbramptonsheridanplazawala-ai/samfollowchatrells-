@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SamFollowChatrells</title>
+  <title>SamFollowChat Reels</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .reels {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    .reel {
+      height: 100vh;
+      scroll-snap-align: start;
+      position: relative;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .actions {
+      position: absolute;
+      right: 10px;
+      bottom: 80px;
+      color: white;
+      text-align: center;
+    }
+
+    .actions div {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+      color: white;
+      font-size: 16px;
+    }
+  </style>
 </head>
+
 <body>
-  <h2>Welcome to SamFollowChatrells 👋</h2>
-  <p>App successfully running on GitHub Pages</p>
+
+<div class="reels">
+
+  <div class="reel">
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+    <div class="actions">
+      ❤️<div>Like</div>
+      💬<div>Comment</div>
+      🔗<div>Share</div>
+    </div>
+    <div class="caption">@samfollowchat 🔥 First Reel</div>
+  </div>
+
+  <div class="reel">
+    <video src="https://www.w3schools.com/html/movie.mp4" autoplay muted loop></video>
+    <div class="actions">
+      ❤️<div>Like</div>
+      💬<div>Comment</div>
+      🔗<div>Share</div>
+    </div>
+    <div class="caption">@samfollowchat 🚀 Second Reel</div>
+  </div>
+
+</div>
+
 </body>
 </html>
